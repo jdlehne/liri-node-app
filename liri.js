@@ -97,7 +97,7 @@ function spotify() {
     if (userQuery != '') {
         userQuery = userQuery;
     } else {
-        userQuery = "I want it that way";
+        userQuery = "I saw the Sign";
     }
 
     spotify.search({
@@ -167,7 +167,11 @@ function random() {
         for (var i = 0; i < output.length; i++) {
             console.log(output[i]);
         }
+//----------Capturing the output of random.txt into new arguments for liri commands------//
+        process.argv[2]=output[0];
+        console.log("Argument 2 = " + process.argv[2]);
+        process.argv[3]=output[1];
+        console.log("ARgument 3 = " + process.argv[3]);
 
-        spotify();
     });
 } ////--------------------end random function------------------------//
