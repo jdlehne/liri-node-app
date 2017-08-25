@@ -183,11 +183,5 @@ function random() {
 
     doLiri(userCommand,userQuery);
 
-
-    //--------Capturing the output of random.txt into new arguments for liri commands------//
-    //process.argv[2]=output[0];
-    //  console.log("Argument 2 = " + process.argv[2]);
-    //process.argv[3]=output[1];
-    //console.log("Argument 3 = " + process.argv[3]);
   });
 } ////--------------------end random function------------------------//
