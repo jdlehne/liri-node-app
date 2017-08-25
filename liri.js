@@ -43,6 +43,10 @@ function doLiri() {
       random();
       break;
 
+    default:
+      liriLoad();
+      break;
+
   }
 }
 
@@ -156,8 +160,8 @@ function tweetShow() {
         console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
         fs.appendFile('log.txt', tweets[i].text + '\r\n', function(err) {
           if (err) throw err;
-          console.log('tweets logged to log.txt');
         });
+        console.log('tweets logged to log.txt');
       }
     } else {
       console.log(error);
@@ -185,3 +189,28 @@ function random() {
 
   });
 } ////--------------------end random function------------------------//
+
+function liriLoad() {
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~++++++++++++++++~~~~~~~~~~~~~~~~~~~~~~~");
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~+ Hi I am Liri +~~~~~~~~~~~~~~~~~~~~~~~");
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~++++++++++++++++~~~~~~~~~~~~~~~~~~~~~~~");
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+  console.log("~~~~~~  I have a few tricks I am programmed to do--  ~~~~~~~~~");
+  console.log("~~~~~~~~~~ --by inputting some simple commands ~~~~~~~~~~~~~~~");
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+  console.log("~~~~~~~~~   Ask me to 'spotify-this-song' and then   ~~~~~~~~~");
+  console.log("~~~~~~~~~  enter any song you'd like some info on  ~~~~~~~~~~~");
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+  console.log("~~~~~~~~~~~~   Ask me to 'movie-this' and then   ~~~~~~~~~~~~~");
+  console.log("~~~~~  enter a movie to gather some details on the film  ~~~~~");
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+  console.log("~~~~~~~~~~   Ask me 'my-tweets' and you'll see the ~~~~~~~~~~~");
+  console.log("~ the very few and sad tweets of the nerd that programmed me ~");
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+  console.log("~~~~~~~  Ask me 'do-what-it-says' and I'll see what  ~~~~~~~~~");
+  console.log("~~~ random commands are in my random.txt file and do that ~~~~");
+  console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+}
