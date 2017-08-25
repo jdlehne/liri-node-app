@@ -16,7 +16,7 @@ for (var i = 3; i < nodeArgs.length; i++) {
   }
 }
 
-console.log("User requested: " + userCommand + " " + userQuery);
+//console.log("User requested: " + userCommand + " " + userQuery);
 
 if (userCommand === "do-what-it-says"){
   random();
